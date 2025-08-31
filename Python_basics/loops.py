@@ -65,25 +65,64 @@ else:
 
 # Iterables :
 
-print(type(5))
+# print(type(5))
 
-print(type(range(5)))
+# print(type(range(5)))
 
 
 # range is one of the complex types
-for x in range(5):
-    print(x)
+# for x in range(5):
+#     print(x)
 
 
 # strings are also iterables  - primitive type
-for x in "Python":
-    print(x)
+# for x in "Python":
+#     print(x)
 
 
 # Lists are also iterbales  - it is complex type
 
-for x in [1, 2, 3, 4]:
-    print(x)
+# for x in [1, 2, 3, 4]:
+#     print(x)
 
 
-# While loop:
+# While loop: to repeat something as long as the condition is true
+
+# number = 100
+# while number > 0:
+#     print(number)
+#     number //= 2
+
+
+# while loop - real world example
+
+# command = ""
+# while command != "quit":
+#     command = input(">")
+#     print("ECHO", command)
+
+
+# no matter how the user types, the word quit will always terminate the program.
+# command = ""
+# while command.lower() != "quit":
+#     command = input(">")
+#     print("ECHO", command)
+
+
+# Infinite loops
+
+# while True:
+#     command = input(">")
+#     print("ECHO", command)
+#     if command.lower() == "quit":
+#         break
+
+
+# Exercise  -pront even no from 1 -10
+
+count = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        count += 1
+        print(number)
+print(f"we have {count} even numbers")
